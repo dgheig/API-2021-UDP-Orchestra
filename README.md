@@ -162,7 +162,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 |          | _Enter your response here..._                                                                      |
 | Question | How can we use the `Map` built-in object introduced in ECMAScript 6 to implement a **dictionary**? |
 |          | _Enter your response here..._                                                                      |
-| Question | How can we use the `Moment.js` npm module to help us with **date manipulations** and formatting?   |
+| Question | How can we use the `Day.js` npm module to help us with **date manipulations** and formatting?      |
 |          | _Enter your response here..._                                                                      |
 | Question | When and how do we **get rid of inactive players**?                                                |
 |          | _Enter your response here..._                                                                      |
