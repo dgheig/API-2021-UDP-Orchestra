@@ -124,7 +124,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 |          | _Enter your response here..._                                                       |
 | Question | What is **npm**?                                                                    |
 |          | _Enter your response here..._                                                       |
-| Question | What is the `npm install` command and what is the purpose of the `--save` flag?     |
+| Question | What is the `npm install` command?                                                  |
 |          | _Enter your response here..._                                                       |
 | Question | How can we use the `https://www.npmjs.com/` web site?                               |
 |          | _Enter your response here..._                                                       |
