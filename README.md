@@ -149,7 +149,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 |          | _Enter your response here..._                                                       |
 | Question | How do we get the list of all **running containers**?                               |
 |          | _Enter your response here..._                                                       |
-| Question | How do we **stop/kill** one running container?                                      |
+| Question | How do we **stop** and **kill** one running container?                              |
 |          | _Enter your response here..._                                                       |
 | Question | How can we check that our running containers are effectively sending UDP datagrams? |
 |          | _Enter your response here..._                                                       |
