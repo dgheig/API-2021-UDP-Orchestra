@@ -103,18 +103,18 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 
 ## Task 1: design the application architecture and protocols
 
-| #        | Topic                                                                                                                                                                   |
-| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| #        | Topic                                                        |
+| -------- | ------------------------------------------------------------ |
 | Question | How can we represent the system in an **architecture diagram**, which gives information both about the Docker containers, the communication protocols and the commands? |
-|          | _Insert your diagram here..._                                                                                                                                           |
-| Question | Who is going to **send UDP datagrams** and **when**?                                                                                                                    |
-|          | _Enter your response here..._                                                                                                                                           |
-| Question | Who is going to **listen for UDP datagrams** and what should happen when a datagram is received?                                                                        |
-|          | _Enter your response here..._                                                                                                                                           |
-| Question | What **payload** should we put in the UDP datagrams?                                                                                                                    |
-|          | _Enter your response here..._                                                                                                                                           |
-| Question | What **data structures** do we need in the UDP sender and receiver? When will we update these data structures? When will we query these data structures?                |
-|          | _Enter your response here..._                                                                                                                                           |
+|          | _Insert your diagram here..._                                |
+| Question | Who is going to **send UDP datagrams** and **when**?         |
+|          | The `res/musician` containers, every 2 seconds.              |
+| Question | Who is going to **listen for UDP datagrams** and what should happen when a datagram is received? |
+|          | The `res/auditor` containers. The data of who played what and when should be updated according to the musician received. |
+| Question | What **payload** should we put in the UDP datagrams?         |
+|          | The `UUID` of the `musician` , the sound that was played and when. |
+| Question | What **data structures** do we need in the UDP sender and receiver? When will we update these data structures? When will we query these data structures? |
+|          | A *JavaScript* object to represent a `res/musician`, *JSON* to transmit the data and a *JavaScript* list for musicians on the `res/auditor` side. |
 
 ## Task 2: implement a "musician" Node.js application
 
