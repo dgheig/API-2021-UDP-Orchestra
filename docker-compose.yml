@@ -1,0 +1,20 @@
+version: '3.5'
+services:
+  musician:
+    build:
+      context: ./docker/image-musician
+      labels:
+      - "RES=UDP"
+    image: res/musician
+    networks:
+      default:
+    labels:
+      - "RES=UDP"
+  auditor:
+    build:
+      context: ./docker/image-auditor
+      labels:
+      - "RES=UDP"
+    image: res/auditor
+    labels:
+    - "RES=UDP"
