@@ -1,12 +1,9 @@
 // We use a standard Node.js module to work with UDP
 const dgram = require('dgram');
 const { v4: uuid } = require('uuid');
-
 const Chance = require('chance');
 var chance = new Chance();
 
-// Let's create a datagram socket. We will use it to send our UDP datagrams
-const s = dgram.createSocket("udp4");
 
 const protocol = {
     PROTOCOL_PORT: 5000,
@@ -20,10 +17,19 @@ const INSTRUMENTS = {
     violin: "gzi-gzi",
     drum: "boum-boum"
 };
+console.log(process.argv);
+const instrument = (
+    INSTRUMENTS.hasOwnProperty(process.argv[2]) ?
+    process.argv[2] :
+    chance.pickone(Object.keys(INSTRUMENTS))
+);
+
+// Let's create a datagram socket. We will use it to send our UDP datagrams
+const s = dgram.createSocket("udp4");
 
 const musician = {
     uuid: uuid(),
-    instrument: chance.pickone(Object.keys(INSTRUMENTS)),
+    instrument: instrument,
     activeSince: new Date()
 };
 
