@@ -114,7 +114,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | Question | What **payload** should we put in the UDP datagrams?         |
 |          | The `UUID` of the `musician` , the instrument it is playing and since when. |
 | Question | What **data structures** do we need in the UDP sender and receiver? When will we update these data structures? When will we query these data structures? |
-|          | An object to represent a `musician` on the server side and a Map on the client side to easily handle the unicity of data per musician.<br />The musician data are stored once at the beginning of the musician service.<br />The Map will store both the received data and the timestamp at which the data was received. Periodicaly, each data that wasn't renewed on time is considered as sent by a stopped node and thus deleted.<br />The current state of the `auditor` service can be retrieved any time. |
+|          | An object to represent a `musician` on the server side and a Map on the client side to easily handle the unicity of data per musician.<br />The musician data are stored once at the beginning of the musician service.<br />The Map will store both the received data and the timestamp at which the data was received. Periodically, each data that wasn't renewed on time is considered as sent by a stopped node and thus deleted.<br />The current state of the `auditor` service can be retrieved any time. |
 
 ## Task 2: implement a "musician" Node.js application
 
